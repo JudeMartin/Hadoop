@@ -4,9 +4,8 @@ Hadoop :Apache Hadoop is an open-source software framework written in Java for d
 
 
 ==========================================>Hadoop Installation
-
-
 Download Hadoop: 
+
     Step 1: http://www.cloudera.com/content/cloudera/en/downloads/quickstart_vms/cdh-5-4-x.html
             Choose the required version of Hypervisor(VMware)
     
