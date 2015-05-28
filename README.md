@@ -63,6 +63,8 @@ Sqoop: To transfer Relational data to Hadoop File System
         $sqoop-version
 
 =======================================>Transfering data from MySql to HDFS via Scoop Installation
+    
+    Mysql is running on the local host and Hadoop on the Virtual Machine
 
    Step 1: Grant all permissions to the user in MySql
             command : GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION; // root is the username
