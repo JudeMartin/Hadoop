@@ -58,7 +58,7 @@ Sqoop: To transfer Relational data to Hadoop File System
         Link: http://ftp.ntu.edu.tw/MySQL/Downloads/Connector-J/ 
         download : mysql-connector-java-5.1.30.tar.gz
    
-   Step 6: Verify the version of Sqoop :
+    Step 6: Verify the version of Sqoop :
         $cd $SQOOP_HOME/bin
         $sqoop-version
 
