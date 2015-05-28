@@ -3,7 +3,7 @@
 Hadoop :Apache Hadoop is an open-source software framework written in Java for distributed storage and distributed                      processing of very large data sets on computer clusters built from commodity hardware.  
 
 
-====================================Hadoop Installation==========================================>
+==========================================>Hadoop Installation
 
 
 Download Hadoop: 
@@ -23,7 +23,7 @@ Download Hadoop:
     
     
     
-==============================================Sqoop Installation==========================================>
+==============================================>Sqoop Installation
 
 Sqoop: To transfer Relational data to Hadoop File System
         First check if you have SQL running.
@@ -62,7 +62,7 @@ Sqoop: To transfer Relational data to Hadoop File System
         $cd $SQOOP_HOME/bin
         $sqoop-version
 
-====================================Transfering data from MySql to HDFS via Scoop Installation==========================================>
+=======================================>Transfering data from MySql to HDFS via Scoop Installation
 
    Step 1: Grant all permissions to the user in MySql
             command : GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION; // root is the username
