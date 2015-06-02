@@ -53,7 +53,8 @@ Sqoop: To transfer Relational data to Hadoop File System
          export HADOOP_COMMON_HOME=/usr/local/hadoop 
          export HADOOP_MAPRED_HOME=/usr/local/hadoop
          
-    Step 5: Download and Configure mysql-connector-java and  move the mysql-connector-java-5.1.30-bin.jar file to              /usr/lib/sqoop/lib
+    Step 5: Download and Configure mysql-connector-java and  move the mysql-connector-java-5.1.30-bin.jar 
+            file to /usr/lib/sqoop/lib
         Link: http://ftp.ntu.edu.tw/MySQL/Downloads/Connector-J/ 
         download : mysql-connector-java-5.1.30.tar.gz
    
@@ -71,9 +72,13 @@ Sqoop: To transfer Relational data to Hadoop File System
             ifconfig  => copy the ipaddress./
     Step 3: Transfer data
          command: sqoop import --connect jdbc:mysql://x.x.x.x:3306/employees --username root --table contacts 
-         database name : employees
-         database user name : root
-         table name : contacts
+        // database name : employees
+        //database user name : root
+        // table name : contacts
+    Step 4: Incremental import:
+        sqoop import --connect jdbc:mysql://x.x.x.x:3306/employees --username root --table contacts --check-column contact_id --incremental append -last-value 831234450
+        // contact_id  : primary key
+        // -last-value : basing on this value Sqoop will load these values into the HDFS.
          
          
 
